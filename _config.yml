@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "zh-CN"
 site_theme               : "default"
-title                    : 我的学术网站
+title                    : my academic website
 title_separator          : "-"
-name                     : Yiwei Liu  "您的姓名"
-description              : 个人学术网站
+name                     : Yiwei Liu
+description              : my academic websit
 url                      : https://lywlywlywlywlyw.github.io # 您的网站URL
 baseurl                  : "" # 子路径，一般留空
 repository               : "lywlywlywlywlyw/lywlywlywlywlyw.github.io" # 您的GitHub仓库
@@ -26,8 +26,8 @@ author:
   name             : "Yiwei Liu"
   pronouns         : # 例如："他/他的"
   bio              : "在这里写一段简短的个人介绍，会显示在侧边栏"
-  location         : "中国"
-  employer         : "您的单位/学校"
+  location         : "Hangzhou, China"
+  employer         : "Sussex AI Institute, ZJSU"
   uri              : # 个人网站URL
   email            : "您的邮箱@example.com"
 
@@ -46,8 +46,8 @@ author:
   bitbucket        : # 用户名
   codepen          : # 用户名
   dribbble         : # 用户名
-  github           : # 您的GitHub用户名
-  kaggle           : # 用户名
+  github           : "lywlywlywlywlyw"
+  kaggle           : "evansussex"
   stackoverflow    : # 用户ID或用户ID/用户名
 
   # Social media - 填写您使用的社交媒体平台，没有的可以留空
