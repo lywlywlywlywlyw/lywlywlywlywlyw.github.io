@@ -6,59 +6,69 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
 {% include base_path %}
 
 Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+=========
+
+### M.S. in Artificial Intelligence and Adaptive System
+
+*Sussex Artificial Intelligence Institute, Zhejiang Gongshang University*
+Hangzhou, China | 2024-Present
+
+* **Core Courses:** Intelligence in Animals and Machines, Intelligent Systems Techniques, Image Processing, Natural Language Processing, Machine Learning
+* **Supervisor:** Assistant Professor Peter Wijeratne (University of Sussex) and Professor Guiyi Wei (Zhejiang Gongshang University)
+* **Expected Graduation:** March 2026
+
+### B.S. in Intelligent Science and Technology
+
+*Yantai  university*
+Yantai, China | 2020-2024
+
+* **GPA:** 3.21/5.0 (83.84/100)
+* **Thesis:** User facial expression recognition system based on Deep Learning
+* **Relevant Coursework:** data structures and algorithms, pattern recognition, image processing，high-level programming language（R language）
+* **Thesis Advisor:** Prof. Zhizhong Liu
 
 Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+===============
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Fall 2015: Software Technology Developer
+  * Shandong Norite Intelligent Technology Co., Ltd
+  * Duties included: Develop and maintain software necessary for the company's business operations
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+# Research Interests
+
+* U-Net Variant for Medical Image Anomaly Detection
+* Variational Autoencoder (VAE)-Based Anomaly Detection
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+
+### programing languag
+
+* python
+* C
+* R
+
+### English level
+
+* CET  6
+
+### AI & Machine Learning
+
+* **Frameworks:** PyTorch
+* **Areas:** Computer Vision, Deep Learning
+* **Techniques:** CNNs, Attention Mechanisms, Transfer Learning
+
+### Data Analysis
+
+* **Libraries:** NumPy, Pandas, SciPy
+* **Visualization:** Matplotlib, Seaborn, Plotly
 
 Publications
-======
-  <ul>{% for post in site.publications reversed %}
+============
+
+<ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
