@@ -72,10 +72,3 @@ Publications
 <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-
-```
-<br>
-<div class="cv-download-links" style="text-align: center; margin-top: 2rem;">
-  <a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary" style="display: inline-block; padding: 0.5em 1em; background-color: #2a7ae2; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">下载简历PDF版本</a>
-</div>
-```
