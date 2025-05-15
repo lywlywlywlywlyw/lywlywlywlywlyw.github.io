@@ -24,12 +24,12 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Yiwei Liu"
-  pronouns         : # 例如："他/他的"
-  bio              : "在这里写一段简短的个人介绍，会显示在侧边栏"
+  pronouns         : "he/him"
+  bio              : "An unremarkable AIAS graduate student"
   location         : "Hangzhou, China"
   employer         : "Sussex AI Institute, ZJSU"
   uri              : # 个人网站URL
-  email            : "您的邮箱@example.com"
+  email            : "yl889@sussex.ac.uk"
 
   # Academic websites - 如果没有可以留空或删除#后的内容
   academia         : # URL
