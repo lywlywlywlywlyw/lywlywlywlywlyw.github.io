@@ -44,4 +44,20 @@ $sidebar-screen-min-width   : 1024px;
     --global-text-color                 : #{$dark-gray};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$lighter-gray};
+
+    /* Cyberpunk layer (shared by light/dark) */
+    --cyber-accent                       : #00e5ff;
+    --cyber-accent-2                     : #a855f7;
+    --cyber-accent-3                     : #22c55e;
+    --cyber-glow                         : 0 0 12px rgba(0, 229, 255, 0.14), 0 0 32px rgba(168, 85, 247, 0.10);
+    --cyber-glow-strong                  : 0 0 18px rgba(0, 229, 255, 0.26), 0 0 56px rgba(168, 85, 247, 0.18);
+    --cyber-surface                      : rgba(255, 255, 255, 0.78);
+    --cyber-surface-2                    : rgba(255, 255, 255, 0.55);
+    --cyber-border                       : rgba(0, 229, 255, 0.35);
+    --cyber-border-2                     : rgba(168, 85, 247, 0.28);
+    --cyber-bg-0                         : #f6f7fb;
+    --cyber-bg-1                         : #eef2ff;
+    --cyber-bg-2                         : #ecfeff;
+    --cyber-grid                         : rgba(0, 229, 255, 0.08);
+    --cyber-scanline                     : rgba(0, 0, 0, 0.03);
 }

@@ -10,6 +10,12 @@ redirect_from:
 
 <div class="lang-zh" markdown="1">
 
+## 研究兴趣
+
+- 智能体（Agent）
+- 工作流（Workflow）与编排
+- RAG（检索增强生成）
+
 ## 教育背景
 
 ### 萨塞克斯大学（University of Sussex）- 人工智能与自适应系统 - 硕士
@@ -105,6 +111,12 @@ redirect_from:
 </div>
 
 <div class="lang-en" markdown="1">
+
+## Research Interests
+
+- Agents
+- Workflow orchestration
+- RAG (retrieval-augmented generation)
 
 ## Education
 

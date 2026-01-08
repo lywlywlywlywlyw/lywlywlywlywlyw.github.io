@@ -10,7 +10,7 @@ redirect_from:
 
 ## 你好
 
-我叫刘一苇（Yiwei Liu），目前就读于萨塞克斯大学（University of Sussex）人工智能与自适应系统硕士项目。我关注计算机视觉、医学影像分析与 AI 应用开发。
+我叫刘一苇（Yiwei Liu），目前就读于萨塞克斯大学（University of Sussex）人工智能与自适应系统硕士项目。我关注计算机视觉、医学影像分析与 AI 应用开发，同时也对智能体（Agent）、工作流（Workflow）与 RAG（检索增强生成）方向感兴趣。
 
 你可以在 `CV` 页面查看我的教育背景、实习经历、项目与竞赛信息。
 
@@ -20,7 +20,7 @@ redirect_from:
 
 ## Greetings
 
-I am Yiwei Liu, currently pursuing an M.S. in Artificial Intelligence and Adaptive Systems at the University of Sussex. My interests include computer vision, medical image analysis, and building practical AI applications.
+I am Yiwei Liu, currently pursuing an M.S. in Artificial Intelligence and Adaptive Systems at the University of Sussex. My interests include computer vision, medical image analysis, and building practical AI applications. I am also interested in agents, workflow orchestration, and RAG (retrieval-augmented generation).
 
 You can find my detailed background, internships, projects, and competition results on the `CV` page.
 

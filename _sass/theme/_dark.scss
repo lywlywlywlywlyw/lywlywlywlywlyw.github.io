@@ -51,4 +51,20 @@ html[data-theme="dark"] {
     --global-text-color                 : #{$text};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$background-lighter};
+
+    /* Cyberpunk layer (shared by light/dark) */
+    --cyber-accent                       : #00e5ff;
+    --cyber-accent-2                     : #a855f7;
+    --cyber-accent-3                     : #22c55e;
+    --cyber-glow                         : 0 0 12px rgba(0, 229, 255, 0.18), 0 0 34px rgba(168, 85, 247, 0.14);
+    --cyber-glow-strong                  : 0 0 18px rgba(0, 229, 255, 0.32), 0 0 60px rgba(168, 85, 247, 0.22);
+    --cyber-surface                      : rgba(10, 14, 22, 0.72);
+    --cyber-surface-2                    : rgba(10, 14, 22, 0.48);
+    --cyber-border                       : rgba(0, 229, 255, 0.35);
+    --cyber-border-2                     : rgba(168, 85, 247, 0.28);
+    --cyber-bg-0                         : #060913;
+    --cyber-bg-1                         : #090a1a;
+    --cyber-bg-2                         : #0b1b2b;
+    --cyber-grid                         : rgba(0, 229, 255, 0.10);
+    --cyber-scanline                     : rgba(255, 255, 255, 0.02);
 }

@@ -33,6 +33,10 @@ body {
   /* Set via _themes.scss */
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  background-image: radial-gradient(900px circle at 10% 10%, rgba(0, 229, 255, 0.10), transparent 55%),
+    radial-gradient(900px circle at 90% 15%, rgba(168, 85, 247, 0.10), transparent 55%),
+    radial-gradient(1200px circle at 70% 90%, rgba(34, 197, 94, 0.08), transparent 55%),
+    linear-gradient(135deg, var(--cyber-bg-0), var(--cyber-bg-1) 40%, var(--cyber-bg-2));
 
   margin: 0;
   padding: $masthead-height 0 0;
@@ -40,10 +44,82 @@ body {
   font-family: $global-font-family;
   line-height: 1.5;
 
+  position: relative;
+  overflow-x: hidden;
+
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
   }
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, var(--cyber-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--cyber-grid) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.22;
+  mix-blend-mode: multiply;
+  z-index: 0;
+}
+
+body:after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--cyber-scanline),
+    var(--cyber-scanline) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  opacity: 0.12;
+  z-index: 0;
+}
+
+.masthead,
+#main,
+.sidebar {
+  position: relative;
+  z-index: 1;
+}
+
+::selection {
+  background: rgba(0, 229, 255, 0.28);
+  color: var(--global-text-color);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--cyber-accent);
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  scrollbar-color: rgba(0, 229, 255, 0.55) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(0, 229, 255, 0.55), rgba(168, 85, 247, 0.45));
+  border-radius: 999px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -137,10 +213,6 @@ blockquote {
 /* links */
 
 a {
-  &:focus {
-    @extend %tab-focus;
-  }
-
   &:hover,
   &:active {
     outline: 0;

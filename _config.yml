@@ -24,6 +24,8 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Yiwei Liu"
+  name_zh          : "刘一苇"
+  name_en          : "Yiwei Liu"
   pronouns         : "he/him"
   bio              : "<span class='lang-zh'>人工智能与自适应系统硕士（萨塞克斯大学）</span><span class='lang-en'>M.S. student in Artificial Intelligence and Adaptive Systems (University of Sussex)</span>"
   location         : "<span class='lang-zh'>杭州，中国</span><span class='lang-en'>Hangzhou, China</span>"
