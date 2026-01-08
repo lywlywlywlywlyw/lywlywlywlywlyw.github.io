@@ -12,13 +12,13 @@ redirect_from:
 
 ### 关于我
 
-我叫刘一苇（Yiwei Liu），目前就读于萨塞克斯大学（University of Sussex）人工智能与自适应系统硕士项目。
+我叫刘一苇，目前就读于萨塞克斯大学人工智能与自适应系统硕士项目。
 
-研究方向主要围绕计算机视觉与医学影像分析，同时关注智能体（Agent）、工作流（Workflow）与 RAG（检索增强生成）的工程化落地。
+我的研究方向主要围绕计算机视觉、自然语言处理与医学影像分析，同时关注智能体、工作流与检索增强生成的工程化落地。
 
-  </section>
+</section>
 
-  <section class="home-card" markdown="1">
+<section class="home-card" markdown="1">
 
 ### 研究兴趣
 
@@ -51,18 +51,15 @@ redirect_from:
 
 当前关注：Agent + Workflow + RAG 在真实场景中的可靠性与可复现性。
 
-  </section>
+</section>
 
-  <section class="home-card" markdown="1">
+<section class="home-card" markdown="1">
 
 ### 快速入口
 
 你可以在 `CV` 页面查看我的教育背景、实习经历、项目与竞赛信息。
 
-- [查看 CV](/cv/)
-- [GitHub](https://github.com/lywlywlywlywlyw)
-
-  </section>
+</section>
 </div>
 
 </div>
@@ -75,11 +72,11 @@ redirect_from:
 
 I am Yiwei Liu, currently pursuing an M.S. in Artificial Intelligence and Adaptive Systems at the University of Sussex.
 
-My interests focus on computer vision and medical image analysis, and I also work on practical, reproducible engineering for agents, workflow orchestration, and RAG.
+My interests focus on Computer Vision、atural Language Processing and Medical Image Analysis, and I also work on practical, reproducible engineering for Agents, Workflow orchestration, and RAG.
 
-  </section>
+</section>
 
-  <section class="home-card" markdown="1">
+<section class="home-card" markdown="1">
 
 ### Research Interests
 
@@ -112,18 +109,15 @@ My interests focus on computer vision and medical image analysis, and I also wor
 
 Current focus: reliability and reproducibility of Agent + Workflow + RAG in real scenarios.
 
-  </section>
+</section>
 
-  <section class="home-card" markdown="1">
+<section class="home-card" markdown="1">
 
 ### Quick Links
 
 You can find my education, internships, projects, and competition results on the `CV` page.
 
-- [View CV](/cv/)
-- [GitHub](https://github.com/lywlywlywlywlyw)
-
-  </section>
+</section>
 </div>
 
 </div>
