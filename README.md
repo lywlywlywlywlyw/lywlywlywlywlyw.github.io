@@ -1,96 +1,322 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Academic Pages 模板文件结构与修改指南
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+## 核心文件与目录
 
-# Getting Started
+### 配置文件
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+#### `_config.yml`
+- **功能**：网站的主要配置文件，控制网站的全局设置
+- **修改方法**：
+  - 修改网站标题、描述、URL等基本信息
+  - 更新个人信息（姓名、简历、联系方式等）
+  - 设置社交媒体链接
+  - 配置分析工具、评论系统等
+- **常见修改**：
+  ```yaml
+  title: "您的网站标题"
+  name: "您的姓名"
+  description: "网站描述"
+  url: "https://您的用户名.github.io"
+  author:
+    name: "显示在侧边栏的名字"
+    bio: "个人简介"
+    location: "所在地"
+    email: "电子邮箱"
+  ```
 
-See more info at https://academicpages.github.io/
+#### `_data/navigation.yml`
+- **功能**：控制网站顶部导航菜单
+- **修改方法**：
+  - 添加、删除或修改菜单项
+  - 更改菜单项的顺序
+  - 修改菜单项的标题和链接
+- **常见修改**：
+  ```yaml
+  main:
+    - title: "出版物"
+      url: /publications/
+    - title: "教学"
+      url: /teaching/
+    # 添加新菜单项
+    - title: "新页面"
+      url: /new-page/
+  ```
 
-## Running locally
+#### `_data/ui-text.yml`
+- **功能**：控制界面文本，支持多语言
+- **修改方法**：
+  - 修改特定语言下的文本标签
+- **常见修改**：
+  ```yaml
+  zh-CN:
+    page: "页面"
+    pagination_previous: "上一页"
+    pagination_next: "下一页"
+  ```
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+### 内容文件与目录
 
-1. Clone the repository and made updates as detailed above.
+#### `_pages/`
+- **功能**：存放网站的单独页面
+- **重要文件**：
+  - `about.md`：网站首页/关于页面
+  - `cv.md`：简历页面
+  - `markdown.md`：Markdown指南页面
+- **修改方法**：
+  - 编辑现有页面的内容
+  - 添加新的`.md`文件创建新页面
+- **常见修改**：
+  ```markdown
+  ---
+  permalink: /your-page/
+  title: "您的页面标题"
+  author_profile: true
+  ---
 
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+  这里是页面内容，使用Markdown格式编写。
+  ```
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+#### `_publications/`
+- **功能**：存放出版物/论文信息
+- **修改方法**：
+  - 为每篇论文创建一个`.md`文件
+  - 文件名格式建议：`YYYY-MM-DD-paper-title.md`
+- **常见修改**：
+  ```markdown
+  ---
+  title: "论文标题"
+  collection: publications
+  permalink: /publication/paper-id
+  date: 2023-01-01
+  venue: "期刊名称"
+  paperurl: "http://论文链接"
+  citation: "引用格式"
+  ---
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
+  论文摘要或描述。
+  ```
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+#### `_talks/`
+- **功能**：存放演讲/讲座信息
+- **修改方法**：
+  - 为每次演讲创建一个`.md`文件
+  - 文件名格式建议：`YYYY-MM-DD-talk-title.md`
+- **常见修改**：
+  ```markdown
+  ---
+  title: "演讲标题"
+  collection: talks
+  type: "演讲类型"
+  permalink: /talks/talk-id
+  venue: "演讲地点"
+  date: 2023-01-01
+  location: "城市，国家"
+  ---
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+  演讲描述或摘要。
+  ```
 
-## Using Docker
+#### `_teaching/`
+- **功能**：存放教学经历
+- **修改方法**：
+  - 为每个课程创建一个`.md`文件
+- **常见修改**：
+  ```markdown
+  ---
+  title: "课程名称"
+  collection: teaching
+  type: "课程类型"
+  permalink: /teaching/course-id
+  venue: "机构名称"
+  date: 2023-01-01
+  location: "城市，国家"
+  ---
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+  课程描述。
+  ```
 
-You can build and execute the container by running the following command in the repository:
+#### `_portfolio/`
+- **功能**：存放项目/作品集
+- **修改方法**：
+  - 为每个项目创建一个`.md`文件
+- **常见修改**：
+  ```markdown
+  ---
+  title: "项目名称"
+  excerpt: "项目简介"
+  collection: portfolio
+  ---
 
-```bash
-chmod -R 777 .
-docker compose up
-```
+  项目详细描述。
+  ```
 
-You should now be able to access the website from `localhost:4000`.
+#### `_posts/`
+- **功能**：存放博客文章
+- **修改方法**：
+  - 为每篇文章创建一个`.md`文件
+  - 文件名格式必须为：`YYYY-MM-DD-title.md`
+- **常见修改**：
+  ```markdown
+  ---
+  title: '文章标题'
+  date: 2023-01-01
+  permalink: /posts/2023/01/post-id/
+  tags:
+    - 标签1
+    - 标签2
+  ---
 
-### Using the DevContainer in VS Code
+  文章内容。
+  ```
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+### 样式与布局文件
 
-# Maintenance
+#### `_layouts/`
+- **功能**：存放页面布局模板
+- **重要文件**：
+  - `default.html`：默认布局
+  - `single.html`：单页面布局
+  - `talk.html`：演讲页面布局
+- **修改方法**：
+  - 谨慎修改，除非您了解HTML和Liquid模板语言
+  - 修改布局结构或添加新元素
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+#### `_includes/`
+- **功能**：存放可重用的HTML组件
+- **重要文件**：
+  - `author-profile.html`：侧边栏作者信息
+  - `footer.html`：页脚
+  - `masthead.html`：顶部导航栏
+- **修改方法**：
+  - 修改特定组件的HTML结构
+  - 添加新的功能或元素
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+#### `_sass/`
+- **功能**：存放SCSS样式文件
+- **重要目录**：
+  - `_themes/`：主题样式
+  - `layout/`：布局样式
+- **修改方法**：
+  - 修改颜色、字体、间距等样式
+  - 在`_themes/_default.scss`或`_themes/_dark.scss`中修改主题颜色
 
-## Bugfixes and enhancements
+#### `assets/`
+- **功能**：存放网站资源文件
+- **重要目录**：
+  - `css/`：CSS样式文件
+  - `js/`：JavaScript文件
+- **修改方法**：
+  - 修改`css/main.scss`添加自定义样式
+  - 添加新的JavaScript功能
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+### 静态资源
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+#### `images/`
+- **功能**：存放图片文件
+- **重要文件**：
+  - `profile.png`：个人头像
+- **修改方法**：
+  - 替换`profile.png`更换头像
+  - 添加新图片并在Markdown中引用
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+#### `files/`
+- **功能**：存放可下载文件（PDF、ZIP等）
+- **修改方法**：
+  - 上传文件到此目录
+  - 通过`https://用户名.github.io/files/文件名`访问
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+## 常见修改场景
+
+### 1. 修改个人信息
+
+1. 编辑`_config.yml`文件中的`author`部分
+2. 更新`name`、`bio`、`location`、`email`等字段
+3. 添加或修改社交媒体链接
+
+### 2. 更换头像
+
+1. 准备一张合适的头像图片
+2. 将其命名为`profile.png`
+3. 上传到`images/`目录，替换原有文件
+4. 或者在`_config.yml`中修改`author.avatar`指向新的图片文件
+
+### 3. 修改网站标题和描述
+
+1. 编辑`_config.yml`文件
+2. 修改`title`、`name`和`description`字段
+
+### 4. 修改导航菜单
+
+1. 编辑`_data/navigation.yml`文件
+2. 在`main`部分添加、删除或修改菜单项
+3. 每个菜单项包含`title`（显示文本）和`url`（链接地址）
+
+### 5. 添加新页面
+
+1. 在`_pages/`目录创建新的`.md`文件
+2. 添加YAML前置信息，包括`permalink`、`title`等
+3. 编写页面内容
+4. 在`_data/navigation.yml`中添加链接（如需要）
+
+### 6. 添加出版物/论文
+
+1. 在`_publications/`目录创建新的`.md`文件
+2. 添加YAML前置信息，包括`title`、`collection`、`permalink`、`date`等
+3. 编写论文描述
+
+### 7. 修改网站颜色主题
+
+1. 编辑`_sass/themes/_default.scss`（默认主题）或`_sass/themes/_dark.scss`（暗色主题）
+2. 修改颜色变量
+3. 在`_config.yml`中的`site_theme`设置使用的主题
+
+### 8. 添加自定义CSS
+
+1. 编辑`assets/css/main.scss`文件
+2. 在文件末尾添加自定义CSS规则
+
+### 9. 上传和链接PDF等文件
+
+1. 将文件上传到`files/`目录
+2. 在Markdown中使用`[链接文本](https://用户名.github.io/files/文件名.pdf)`引用
+
+### 10. 修改页脚信息
+
+1. 编辑`_includes/footer.html`文件
+2. 修改版权信息或添加自定义内容
+
+## 特殊功能修改
+
+### 启用/禁用评论系统
+
+1. 编辑`_config.yml`文件
+2. 修改`comments.provider`字段
+3. 配置相应的评论系统参数
+
+### 启用/禁用分析工具
+
+1. 编辑`_config.yml`文件
+2. 修改`analytics.provider`字段
+3. 添加相应的跟踪ID
+
+### 修改语言设置
+
+1. 编辑`_config.yml`文件
+2. 修改`locale`字段（如`"zh-CN"`表示简体中文）
+
+### 添加自定义JavaScript
+
+1. 将JS文件放在`assets/js/`目录
+2. 在`_includes/scripts.html`中引用
+
+## 总结
+
+Academic Pages模板的文件结构清晰，便于维护和修改。大多数常见修改只需编辑几个关键文件：
+- `_config.yml`：全局设置和个人信息
+- `_data/navigation.yml`：导航菜单
+- `_pages/about.md`：首页内容
+- 各种集合目录（`_publications/`、`_talks/`等）：添加具体内容
+
+通过了解每个文件的功能和修改方法，您可以轻松地定制您的学术网站，展示您的研究成果和专业经历。
+
+记住，每次修改后，GitHub Pages会自动重新构建您的网站，通常需要几分钟时间才能看到更改生效。
