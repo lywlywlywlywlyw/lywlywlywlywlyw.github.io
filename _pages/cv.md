@@ -10,47 +10,46 @@ redirect_from:
 
 <div class="lang-zh" markdown="1">
 
-<div class="cv-grid">
-  <section class="cv-card" markdown="1">
+{::div .cv-card}
 
-## 研究兴趣
+## <i class="fas fa-flask"></i> 研究兴趣
 
-<div class="cv-chip-list">
-  <span class="cv-chip">智能体（Agent）</span>
-  <span class="cv-chip">工作流（Workflow）与编排</span>
-  <span class="cv-chip">检索增强生成（RAG）</span>
-</div>
+- 智能体（Agent）
+- 工作流（Workflow）与编排
+- 检索增强生成（RAG）
+  {: .cv-chip-list}
+  {:/div}
 
-</section>
+{::div .cv-card}
 
-<section class="cv-card" markdown="1">
-
-## 教育背景
+## <i class="fas fa-graduation-cap"></i> 教育背景
 
 ### 萨塞克斯大学（University of Sussex）- 人工智能与自适应系统 - 硕士
 
-<div class="cv-meta">2024.09 – 2026.01</div>
+2024.09 – 2026.01
+{: .cv-meta}
 
 - **核心课程：**图像处理、自然语言处理、机器学习、动物与机器智能、智能系统技术、自适应系统、Python 编程
 - **毕业论文：**Multi-Branch 3D Brain Tumor Segmentation: Integrating VAE Reconstruction and Uncertainty Quantification for Enhanced Clinical Decision Support
 
 ### 烟台大学 - 智能科学与技术 - 学士
 
-<div class="cv-meta">2020.09 – 2024.06</div>
+2020.09 – 2024.06
+{: .cv-meta}
 
 - **GPA：**3.21/5.0（83.84/100）
 - **毕业论文：**基于深度学习的用户表情识别系统
 - **校内经历：**蓝翼青年志愿者协会副会长，组织开展数十次志愿服务活动
+  {:/div}
 
-  </section>
+{::div .cv-card}
 
-  <section class="cv-card" markdown="1">
-
-## 实习经历
+## <i class="fas fa-briefcase"></i> 实习经历
 
 ### 海康威视 - 海康机器人｜产品技术支持工程师（AI 应用开发）
 
-<div class="cv-meta">2025.11 – 2026.01</div>
+2025.11 – 2026.01
+{: .cv-meta}
 
 - 基于 YOLO 的器具智能分类识别系统（货架/料车/托盘等约 45 类）；负责数据标注规范、数据清洗、迁移学习与超参数优化，结合数据增强提升识别效果
 - 使用 FastAPI 搭建推理服务与 RESTful API，提供批量识别接口与 Web 可视化界面
@@ -60,28 +59,26 @@ redirect_from:
 
 ### 山东诺瑞特智能科技有限公司｜软件技术开发工程师
 
-<div class="cv-meta">2023.07 – 2023.08</div>
+2023.07 – 2023.08
+{: .cv-meta}
 
 - 参与智能热水器控制器软件开发，提出并参与设计语音控制原型，集成语音识别 API 实现指令解析与语音反馈
 - 设计 OCR 智能发票识别原型方案，自动读取票据信息并写入 ERP 管理系统
+  {:/div}
 
-  </section>
+{::div .cv-card}
 
-  <section class="cv-card" markdown="1">
+## <i class="fas fa-cogs"></i> 技能
 
-## 技能
-
-<div class="cv-chip-list">
-  <span class="cv-chip">Python / PyTorch</span>
-  <span class="cv-chip">FastAPI / Flask</span>
-  <span class="cv-chip">Computer Vision</span>
-  <span class="cv-chip">RAG</span>
-  <span class="cv-chip">Coze / Dify</span>
-  <span class="cv-chip">Plotly</span>
-  <span class="cv-chip">Git</span>
-</div>
-
-- **Kaggle Expert：**Kaggle 排名 885 / 203347
+- Python / PyTorch
+- FastAPI / Flask
+- Computer Vision
+- RAG
+- Coze / Dify
+- Plotly
+- Git
+  {: .cv-chip-list}
+- **Kaggle Expert：**Kaggle 排名 835 of 200,422
 - **编程/框架：**Python（PyTorch）、C、R、MySQL
 - **英语：**CET-6，硕士期间全英文授课，能够无障碍阅读英文技术文档
 - **学术服务：**IEEE SMC 2025（CCF C 类）会议审稿人
@@ -89,22 +86,20 @@ redirect_from:
 - **RPA：**影刀高级 RPA 技能证书
 - **版本控制：**Git（分支管理、合并策略、冲突解决），具备团队协作与开源协作经验
 - **数据科学：**数据预处理、特征工程、EDA、建模与可视化（pandas、Plotly 等）
+  {:/div}
 
-  </section>
+{::div .cv-card}
 
-  <section class="cv-card" markdown="1">
-
-## 竞赛获奖
+## <i class="fas fa-award"></i> 竞赛获奖
 
 - Kaggle Yale/UNC-CH - Geophysical Waveform Inversion 团队银牌（Top 5%，60/1388）
 - Kaggle ARC Prize 2025 个人铜牌（Top 8%，109/1454）
 - Kaggle BirdCLEF+ 2025 个人铜牌（Top 9%，168/2025）
+  {:/div}
 
-  </section>
+{::div .cv-card}
 
-  <section class="cv-card" markdown="1">
-
-## 项目经历
+## <i class="fas fa-project-diagram"></i> 项目经历
 
 ### 基于 Coze 平台的小说推文视频生成系统
 
@@ -133,15 +128,12 @@ redirect_from:
 ### 电商广告投放效果分析与客户细分
 
 - OneHotEncoder + MinMaxScaler 处理 889 个渠道 13 维特征，KMeans 聚类并用轮廓系数选择 4 类（0.502），识别高转化/精准/流量/低效渠道，为投放优化提供依据
-
-  </section>
-
-</div>
+  {:/div}
 
 {% assign cv_pubs = site.publications | where: "published", true %}
 {% if cv_pubs and cv_pubs.size > 0 %}
 
-## 出版物
+## <i class="fas fa-book"></i> 出版物
 
 <ul>{% for post in cv_pubs reversed %}
     {% include archive-single-cv.html %}
@@ -152,47 +144,43 @@ redirect_from:
 
 <div class="lang-en" markdown="1">
 
-<div class="cv-grid">
-  <section class="cv-card" markdown="1">
+{::div .cv-card}
+## <i class="fas fa-flask"></i> Research Interests
 
-## Research Interests
+- Agents
+- Workflow orchestration
+- RAG (retrieval-augmented generation)
+{: .cv-chip-list}
+{:/div}
 
-<div class="cv-chip-list">
-  <span class="cv-chip">Agents</span>
-  <span class="cv-chip">Workflow orchestration</span>
-  <span class="cv-chip">RAG</span>
-</div>
-
-</section>
-
-<section class="cv-card" markdown="1">
-
-## Education
+{::div .cv-card}
+## <i class="fas fa-graduation-cap"></i> Education
 
 ### University of Sussex - M.S. in Artificial Intelligence and Adaptive Systems
 
-<div class="cv-meta">2024.09 – 2026.01</div>
+2024.09 – 2026.01
+{: .cv-meta}
 
 - **Core Courses:** Image Processing, Natural Language Processing, Machine Learning, Intelligence in Animals and Machines, Intelligent Systems Techniques, Adaptive Systems, Python Programming
 - **Thesis:** Multi-Branch 3D Brain Tumor Segmentation: Integrating VAE Reconstruction and Uncertainty Quantification for Enhanced Clinical Decision Support
 
 ### Yantai University - B.S. in Intelligent Science and Technology
 
-<div class="cv-meta">2020.09 – 2024.06</div>
+2020.09 – 2024.06
+{: .cv-meta}
 
 - **GPA:** 3.21/5.0 (83.84/100)
 - **Thesis:** User Facial Expression Recognition System Based on Deep Learning
 - **Activities:** Vice President of a volunteer association; organized dozens of volunteering events
+{:/div}
 
-  </section>
-
-  <section class="cv-card" markdown="1">
-
-## Internship Experience
+{::div .cv-card}
+## <i class="fas fa-briefcase"></i> Internship Experience
 
 ### Hikvision Robotics - Product Technical Support Engineer (AI Application Development)
 
-<div class="cv-meta">2025.11 – 2026.01</div>
+2025.11 – 2026.01
+{: .cv-meta}
 
 - Developed a YOLO-based equipment classification system (~45 categories). Defined labeling rules, cleaned datasets, fine-tuned a pretrained YOLO model and optimized hyperparameters with augmentation
 - Built inference services and RESTful APIs with FastAPI; provided batch recognition APIs and a web visualization interface
@@ -202,28 +190,26 @@ redirect_from:
 
 ### Shandong Norite Intelligent Technology Co., Ltd. - Software Development Engineer
 
-<div class="cv-meta">2023.07 – 2023.08</div>
+2023.07 – 2023.08
+{: .cv-meta}
 
 - Contributed to smart water heater controller development; proposed a voice-control prototype integrating a speech recognition API for command parsing and voice feedback
 - Designed an OCR invoice recognition prototype to extract fields and write into an ERP system
+{:/div}
 
-  </section>
+{::div .cv-card}
+## <i class="fas fa-cogs"></i> Skills
 
-  <section class="cv-card" markdown="1">
+- Python / PyTorch
+- FastAPI / Flask
+- Computer Vision
+- RAG
+- Coze / Dify
+- Plotly
+- Git
+{: .cv-chip-list}
 
-## Skills
-
-<div class="cv-chip-list">
-  <span class="cv-chip">Python / PyTorch</span>
-  <span class="cv-chip">FastAPI / Flask</span>
-  <span class="cv-chip">Computer Vision</span>
-  <span class="cv-chip">RAG</span>
-  <span class="cv-chip">Coze / Dify</span>
-  <span class="cv-chip">Plotly</span>
-  <span class="cv-chip">Git</span>
-</div>
-
-- **Kaggle Expert:** Rank 885 / 203,347
+- **Kaggle Expert:** Rank 835 of 200,422
 - **Programming:** Python (PyTorch), C, R, MySQL
 - **English:** CET-6; fully English-taught master program; able to read technical documentation fluently
 - **Academic Service:** Reviewer for IEEE SMC 2025 (CCF-C)
@@ -231,22 +217,18 @@ redirect_from:
 - **RPA:** Certified (Yingdao advanced)
 - **Version Control:** Git (branching, merging, conflict resolution)
 - **Data Science:** preprocessing, feature engineering, EDA, modeling, and visualization (pandas/Plotly)
+{:/div}
 
-  </section>
-
-  <section class="cv-card" markdown="1">
-
-## Awards
+{::div .cv-card}
+## <i class="fas fa-award"></i> Awards
 
 - Kaggle Yale/UNC-CH - Geophysical Waveform Inversion (Team Silver, Top 5%, 60/1388)
 - Kaggle ARC Prize 2025 (Individual Bronze, Top 8%, 109/1454)
 - Kaggle BirdCLEF+ 2025 (Individual Bronze, Top 9%, 168/2025)
+{:/div}
 
-  </section>
-
-  <section class="cv-card" markdown="1">
-
-## Projects
+{::div .cv-card}
+## <i class="fas fa-project-diagram"></i> Projects
 
 ### Novel-to-Video Generation System (Coze)
 
@@ -273,15 +255,12 @@ redirect_from:
 ### E-commerce Ad Performance Analytics & Customer Segmentation
 
 - Processed 889 channels with 13-dim features; used OneHotEncoder and MinMaxScaler; applied KMeans and selected k=4 via Silhouette Score (0.502)
-
-  </section>
-
-</div>
+{:/div}
 
 {% assign cv_pubs = site.publications | where: "published", true %}
 {% if cv_pubs and cv_pubs.size > 0 %}
 
-## Publications
+## <i class="fas fa-book"></i> Publications
 
 <ul>{% for post in cv_pubs reversed %}
     {% include archive-single-cv.html %}

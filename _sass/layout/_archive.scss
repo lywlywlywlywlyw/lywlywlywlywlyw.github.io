@@ -29,16 +29,6 @@
 }
 
 .archive {
-  .cv-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin: 0.75rem 0 1rem;
-
-    @include breakpoint($medium) {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
 
   .cv-card {
     background: var(--cyber-surface);
@@ -49,6 +39,7 @@
     -webkit-backdrop-filter: blur(10px);
     padding: 1rem 1rem;
     transition: $global-transition;
+    margin-bottom: 1rem; /* Add spacing between vertical cards */
 
     &:hover {
       box-shadow: var(--cyber-glow-strong);
@@ -57,6 +48,13 @@
 
     h2 {
       margin-top: 0;
+      font-size: $type-size-4;
+
+      .fas {
+        margin-right: 0.5em;
+        font-size: 0.8em; // Make icon slightly smaller than title
+        color: var(--cyber-accent);
+      }
     }
   }
 
