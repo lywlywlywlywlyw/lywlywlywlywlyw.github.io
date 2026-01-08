@@ -146,6 +146,102 @@
   }
 }
 
+.page__content {
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 0.75rem;
+
+    @include breakpoint($medium) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .home-card {
+    background: var(--cyber-surface);
+    border: 1px solid var(--cyber-border);
+    border-radius: calc(#{$border-radius} + 6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem 1rem;
+    transition: $global-transition;
+
+    &:hover {
+      box-shadow: var(--cyber-glow-strong);
+      border-color: var(--cyber-border-2);
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  .chip-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.25rem 0 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid var(--cyber-border);
+    background: var(--cyber-surface-2);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    font-size: $type-size-7;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  .interest-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin: 0.25rem 0 0.75rem;
+
+    @include breakpoint($small) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint($large) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .interest-card {
+    border-radius: calc(#{$border-radius} + 6px);
+    border: 1px solid var(--cyber-border);
+    background: var(--cyber-surface-2);
+    padding: 0.75rem 0.85rem;
+    transition: $global-transition;
+
+    &:hover {
+      border-color: var(--cyber-border-2);
+      box-shadow: 0 0 0 1px rgba(0, 229, 255, 0.12), 0 0 24px rgba(0, 229, 255, 0.12);
+    }
+  }
+
+  .interest-title {
+    font-family: $sans-serif-narrow;
+    font-weight: 700;
+    font-size: $type-size-6;
+    margin: 0 0 0.15rem;
+  }
+
+  .interest-desc {
+    font-size: $type-size-7;
+    color: var(--global-text-color-light);
+    margin: 0;
+  }
+}
+
 .page__hero {
   position: relative;
   margin-bottom: 2em;
