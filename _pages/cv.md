@@ -93,11 +93,14 @@ redirect_from:
 
 - OneHotEncoder + MinMaxScaler 处理 889 个渠道 13 维特征，KMeans 聚类并用轮廓系数选择 4 类（0.502），识别高转化/精准/流量/低效渠道，为投放优化提供依据
 
+{% assign cv_pubs = site.publications | where: "published", true %}
+{% if cv_pubs and cv_pubs.size > 0 %}
 ## 出版物
 
-<ul>{% for post in site.publications reversed %}
+<ul>{% for post in cv_pubs reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+{% endif %}
 
 </div>
 
@@ -184,10 +187,13 @@ redirect_from:
 
 - Processed 889 channels with 13-dim features; used OneHotEncoder and MinMaxScaler; applied KMeans and selected k=4 via Silhouette Score (0.502)
 
+{% assign cv_pubs = site.publications | where: "published", true %}
+{% if cv_pubs and cv_pubs.size > 0 %}
 ## Publications
 
-<ul>{% for post in site.publications reversed %}
+<ul>{% for post in cv_pubs reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+{% endif %}
 
 </div>
