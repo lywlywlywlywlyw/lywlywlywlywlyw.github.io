@@ -3,20 +3,19 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# `jekyll serve -l -H localhost`. If you change this file, please restart the
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Your Name / Site Title"
+locale                   : "zh-CN"
+site_theme               : "default"
+title                    : Yiwei Liu
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+name                     : Yiwei Liu
+description              : Academic website of Yiwei Liu
+url                      : https://lywlywlywlywlyw.github.io # 您的网站URL
+baseurl                  : "" # 子路径，一般留空
+repository               : "lywlywlywlywlyw/lywlywlywlywlyw.github.io" # 您的GitHub仓库
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,75 +23,69 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  name             : "Yiwei Liu"
+  pronouns         : "he/him"
+  bio              : "<span class='lang-zh'>人工智能与自适应系统硕士（萨塞克斯大学）</span><span class='lang-en'>M.S. student in Artificial Intelligence and Adaptive Systems (University of Sussex)</span>"
+  location         : "<span class='lang-zh'>杭州，中国</span><span class='lang-en'>Hangzhou, China</span>"
+  employer         : "<span class='lang-zh'>萨塞克斯大学</span><span class='lang-en'>University of Sussex</span>"
+  uri              : # 个人网站URL
+  email            : "yl889@sussex.ac.uk"
 
-  # Academic websites
+  # Academic websites - 如果没有可以留空或删除#后的内容
   academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  inspire-hep      : # URL
+  arxiv            : # URL
+  googlescholar    : # "https://scholar.google.com/citations?user=您的ID"
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : # "http://orcid.org/您的ORCID"
   semantic         : # URL
-  ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
-  zotero           : # URL
 
+  # Repositories and software development - 如果没有可以留空
+  bitbucket        : # 用户名
+  codepen          : # 用户名
+  dribbble         : # 用户名
+  github           : "lywlywlywlywlyw"
+  kaggle           : "evansussex"
+  stackoverflow    : # 用户ID或用户ID/用户名
 
-  # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
-
-  # Social media
-  artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : # Username
+  # Social media - 填写您使用的社交媒体平台，没有的可以留空
+  bluesky          : # 用户名
+  facebook         : # 用户名
+  flickr           : # 用户名
+  foursquare       : # 用户名
+  goodreads        : # 用户名
+  keybase          : # 用户名
+  instagram        : # 用户名
+  lastfm           : # 用户名
+  linkedin         : # 用户名
   mastodon         : # URL
   medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
+  pinterest        : # 用户名
+  soundcloud       : # 用户名
+  steam            : # 用户名
   telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
+  tumblr           : # 用户名
+  twitter          : # X/Twitter用户名
+  vine             : # 用户名
+  weibo            : # 微博用户名
+  wikipedia        : # 用户名
+  xing             : # 用户名
+  youtube          : # 用户名
+  zhihu            : # 知乎用户名
 
-# Publication Category - The following the list of publication categories and their headings
+# Publication Category - 出版物类别及其标题
 publication_category:
   books:
-    title: 'Books'
+    title: '书籍'
   manuscripts:
-    title: 'Journal Articles'    
+    title: '期刊论文'
   conferences:
-    title: 'Conference Papers'
+    title: '会议论文'
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
+teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -143,8 +136,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -295,14 +287,14 @@ defaults:
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -354,7 +346,7 @@ tag_archive:
 
 
 # HTML Compression
-# - https://jch.penibelst.de/
+# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
